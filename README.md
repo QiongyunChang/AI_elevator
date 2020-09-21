@@ -35,8 +35,3 @@ The control sensor is using Arduino Leonardo combined with the HC-SR501 human in
 * Flow chart 
 ![Image](https://github.com/Todoorno/AI_elevator/blob/master/footprint/image/flowchart.PNG)
 
-* Data information 
-![Image](https://github.com/Todoorno/AI_elevator/blob/master/footprint/image/info.JPG)
-
-* UI 
-![Image](https://github.com/Todoorno/AI_elevator/blob/master/footprint/image/UI.JPG)
