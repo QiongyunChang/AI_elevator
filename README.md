@@ -1,5 +1,6 @@
 # AI_elevator
-------This is the college project. Combined with three recognizer ( face, speech, hand )-----
+This is the college project. Combined with three recognizer ( face, speech, hand )
+
 This system is mainly used in places that require personnel control, such as hospitals, residences, and so on. In response to the epidemic occurs , the footprints system stored the data in the database that can be used to know who has entered (also the number of the floor who entry). In addition, it can activated the elevator without touching which is able to stay away from the virus. On the other hand, the high-density entry and exit of the building makes it difficult to control , with the help of the system which can also improve the safety and security .
 
 ## How it works
