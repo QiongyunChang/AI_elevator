@@ -7,6 +7,8 @@ This system is mainly used in places that require personnel control, such as hos
 ## How it works
 In the beginning, the infrared sensor is used to start the execution of the entire system. After turning on the camera imbedded in the computer, it would check whether the stream matches the image in the database. If not, it will be introduced to the registration website. Using OpenCV to assist us in face and hand recognition . On the other hand , there is part of the speech recognition uses the built-in microphone embedded in the computer to obtain the sound, and uses the Google API to convert the audio into text. After getting  the number, it will send the information to the Arduino via selenium, which starts the elevator operation. 
 
+* Flow chart 
+![Image](https://github.com/Todoorno/AI_elevator/blob/master/footprint/image/flowchart.PNG)
 
 ### Face recognition
 The face recognition model mainly uses image-related third-party libraries such as Dlib and Imutils, combined with OpenCV and text files to create a complete model.
@@ -33,6 +35,4 @@ The translation part is using gTTS and translator in Google API. After the audio
 ### Control sensor and elevator model
 The control sensor is using Arduino Leonardo combined with the HC-SR501 human infrared sensor module to simulate the function of the keyboard, and automatically control the computer. It can turn on the system and perform recognition after sensing the human body approach. Open the web page through selenium, and transfer the numbers from the computer to the Arduino Mega2560 module through Arduino ESP8266 chip version via wifi . Through the Arduino Mega2560 module, the received numbers can be controlled by the stepper motor drive module L298N chip to control the movement of the model elevator.
 
-* Flow chart 
-![Image](https://github.com/Todoorno/AI_elevator/blob/master/footprint/image/flowchart.PNG)
 
