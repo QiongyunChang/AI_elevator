@@ -16,9 +16,10 @@ Finally, calculate the Euclidean distance between the output face feature vector
 
 ### Hand recognition
 It's mainly developed by using Opencv, Keras and Tensorflow. 
-At the beginning, the pre-processing of the picture is carried out, the captured picture is converted into a two-dimensional grayscale image, and the size of the picture is adjusted.  
-In actual recognition, the real-time image is converted into a gray-scale image and Gaussian blur is performed, the background image is updated by cumulative weighting, and the difference between two consecutive frames is taken as the absolute value using cv2.absdiff to achieve the effect of separating the foreground and the background.
+At the beginning, the pre-processing of the picture is carried out, the captured picture is converted into a two-dimensional grayscale image, and the size of the picture is adjusted.  In actual recognition, the real-time image is converted into a gray-scale image and Gaussian blur is performed, the background image is updated by cumulative weighting, and the difference between two consecutive frames is taken as the absolute value using cv2.absdiff to achieve the effect of separating the foreground and the background.
+
 Model architecture:
+
 *Convolutional layer -> Convolutional layer -> Pooling layer -> Drop -> Convolutional layer -> Convolutional layer -> Pooling layer -> Fully connected layer -> Drop -> Fully connected layer (Convolution + ReLU, Fully connected + ReLU / Sigmoid, optimizer RSMprop)
 
 ![Image](https://github.com/Todoorno/AI_elevator/blob/master/footprint/image/model.PNG)
